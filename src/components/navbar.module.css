@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Karma:wght@300&family=Public+Sans:wght@400&display=swap');
+
+.topNav {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.5rem 1rem;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.logoType {
+    font-family: 'Public Sans', sans-serif;
+    font-size: 2.5rem;
+    text-decoration: initial;
+    color: black;
+    padding-top: .333rem;
+    padding-bottom: .333rem;
+}
+
+.menuButton {
+    background: none;
+    cursor: pointer;
+}
+
+.itemWrap {
+    width: 100%;
+}
+
+.itemList {
+    display: flex;
+    flex-direction: column;
+}
+
+.navItem {
+    text-align: center;
+    display: block;
+    margin: .25rem 1rem;
+}
+
+.navItem a {
+    text-decoration: initial;
+    color: black;
+    font-size: 1.2rem;
+    font-family: 'Karma', serif;
+}
+
+.collapsed {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+@media (min-width: 576px) {
+    .showMenuButton {
+        display: none;
+    }
+    .itemWrap {
+        width: auto;
+        display: block;
+    }
+    .itemList {
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 768px) {
+    .topNav {
+        padding: 2rem 4rem;
+    }
+    .navItem a {
+        font-size: 1.5rem;
+    }
+}

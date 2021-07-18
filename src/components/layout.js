@@ -1,6 +1,6 @@
 function Layout({ children }) {
     return (
-        <div className="container">
+        <div>
             {children}
         </div>
     );
